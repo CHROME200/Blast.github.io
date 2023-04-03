@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 100vh;
+    background: linear-gradient(rgb(16, 18, 10) , rgb(45, 8, 8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+ul{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-decoration: none;
+}
+html,
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x:hidden;
+}
+li{
+    list-style: none;
+    padding: 8px 12px;
+    font-size: 20px;
+}
+li a{
+    color: rgb(248, 248, 248);
+    font-family: 'Alkatra', cursive;
+    text-decoration: none;
+}
+ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+.te:hover{
+    transition: 0.5s;
+    color: red;
+}
+.username{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.user{
+    color: wheat;
+    font-family: 'Sriracha', cursive;
+}
+.welcome-grp-1{
+    margin-top: 40px;
+}
+.wel{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-90%);
+    margin-top: 150px;
+}
+.welcome{
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+.tuni{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;  
+}
+.blast{
+    color: red;
+}
+.logo{
+    height: 430px;
+    position: absolute;
+    left: 50%;
+    transform: translate(50%);
+    margin-top: -140px;
+}
+.learn-more{
+    width: 350px;
+    height: 40px;
+    background: rgb(39, 40, 37);
+    border: 1px solid red;
+    color: red;
+    border-radius: 17px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.learn-more:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.7s;
+}
+#arrow1{
+    margin-left: 5px;
+}
+.learn-more:hover i {
+    color: white;
+    transition: 0.7s;
+    transform: rotate(90deg);
+}
+.welcome-desc{
+    position: absolute;
+    left: 50%;
+    transform: translate(-70%);
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+/*Body*/
+#body{
+    height: 70vh;
+}
+.title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.about{
+    color: rgb(89, 23, 23);
+    font-size: 50px;
+    font-family: 'Alkatra', cursive;
+}
+.line-1{
+    margin-top: -10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200%;
+    border: 1px solid black;
+}
+.description{
+    position: absolute;
+    left: 50%;
+    transform: translate(-90%);
+    margin-top: 150px;
+}
+.tit{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+.brp{
+    color: red;
+    font-family: 'Sriracha', cursive;
+}
+.desc{
+    font-family: 'Montserrat', sans-serif;
+}
+.samp{
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    transform: translate(45%);
+    margin-top: 140px;
+}
+
+#end{
+    height: 30vh;
+}
+.socialmedia-box{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    margin-top: 90px;
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.contact{
+    color: rgb(89, 23, 23);
+    font-size: 50px;
+    font-family: 'Alkatra', cursive;
+}
+.line-2{
+    margin-top: -10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 170%;
+    border: 1px solid black;
+}
+.small-tit{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+.sc{
+    position: absolute;
+    left: 50%;
+    transform: translate(-27%);
+    margin-top: 10px;
+    font-size: 25px;
+    color: wheat;
+    width: 400px;
+    font-family: 'Comfortaa', cursive;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translate(-43%);
+    margin-top: 60px;
+}
+.icons i{
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+.icons i:hover{
+    color: red;
+    transition : 900ms; 
+    transform : translateY(-6px); 
+}
+
+/* Width */
+@media screen and (min-width: 953px) {
+    .samp{
+        height: 120px;
+    }
+    #end{
+        margin-top: -150px;
+    }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+    .welcome{
+        margin-left: 50px;
+    }
+    .logo{
+        height: 250px;
+        margin-left: 100px;
+        margin-top: -110px;
+    }
+    .tuni{
+        margin-left: 60px;
+    }
+    .samp{
+        height: 100px;
+        margin-left: -30px;
+        margin-top: 200px;
+    }
+}
+@media (max-width: 768px) {
+    /* CSS rules for smaller screens */
+    body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+}
+@media (min-width: 580px) and (max-width: 700px) {
+    nav{
+        display: none;
+    }
+    .wel{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+    }
+    .username{
+        position: absolute;
+        left: 50%;
+        transform: translate(-52%);
+        margin-top: 30px;
+        width: 200px;
+    }
+    .welcome{
+        position: absolute;
+        left: 50%;
+        transform: translate(-45%);
+        margin-top: -60px;
+        wIdth: 500px;
+        font-size: 35px;
+    }
+    .st{
+        position: absolute;
+        left: 50%;
+        transform: translate(-64%);
+        margin-top: 20px;
+        width: 350px;
+    }
+    .tuni{
+        width: 300px;
+        font-size: 25px;
+    }
+    .learn-more{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 100px;
+        width: 300px;
+        height: 40px;
+    }
+    .logo{
+        height: 290px;
+        margin-top: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .line-1{
+        width: 100%;
+    }
+    .description{
+        width: 500px;
+        margin-top: 110px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-47%);
+    }
+    .desc{
+        font-size: 25px;
+    }
+    .samp{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        height: 100px;
+        margin-top: 430px;
+    }
+    .line-2{
+        width: 100%;
+    }
+    #end{
+        height: 30vh;
+        margin-top: 100px;
+    }
+    .sc{
+        margin-top: 10px;
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-48%);
+        margin-left: 10px;
+    }
+    .socialmedia-box{
+        height: 130px;
+    }
+}
+@media (min-width: 401px) and (max-width: 579px) {
+    nav{
+        display: none;
+    }
+    .wel{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+    }
+    .username{
+        position: absolute;
+        left: 50%;
+        transform: translate(-52%);
+        margin-top: 30px;
+        width: 200px;
+    }
+    .welcome{
+        position: absolute;
+        left: 50%;
+        transform: translate(-42%);
+        margin-top: -60px;
+        wIdth: 300px;
+        font-size: 35px;
+    }
+    .st{
+        position: absolute;
+        left: 50%;
+        transform: translate(-64%);
+        margin-top: 20px;
+        width: 350px;
+    }
+    .tuni{
+        width: 300px;
+        font-size: 25px;
+    }
+    .learn-more{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 100px;
+        width: 300px;
+        height: 40px;
+    }
+    .logo{
+        height: 290px;
+        margin-top: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .line-1{
+        width: 100%;
+    }
+    .description{
+        width: 350px;
+        margin-top: 110px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-47%);
+    }
+    .desc{
+        font-size: 20px;
+    }
+    .samp{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        height: 100px;
+        margin-top: 410px;
+    }
+    .line-2{
+        width: 100%;
+    }
+    #end{
+        height: 30vh;
+        margin-top: 100px;
+    }
+    .sc{
+        margin-top: 10px;
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-48%);
+        margin-left: 10px;
+    }
+    .socialmedia-box{
+        height: 130px;
+    }
+}
+@media screen and (max-width: 400px){
+    nav{
+        display: none;
+    }
+    .welcome-desc{
+        display: none;
+    }
+    .wel{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+    }
+    .username{
+        position: absolute;
+        left: 50%;
+        transform: translate(-52%);
+        margin-top: 30px;
+        width: 200px;
+    }
+    .welcome{
+        position: absolute;
+        left: 50%;
+        transform: translate(-44%);
+        margin-top: -60px;
+        wIdth: 250px;
+    }
+    .st{
+        position: absolute;
+        left: 50%;
+        transform: translate(-58%);
+        margin-top: 20px;
+        width: 350px;
+    }
+    .learn-more{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 100px;
+        width: 200px;
+    }
+    .logo{
+        height: 290px;
+        margin-top: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .line-1{
+        width: 100%;
+    }
+    .description{
+        width: 300px;
+        margin-top: 110px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-47%);
+    }
+    .samp{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        height: 120px;
+        margin-top: 360px;
+    }
+    .line-2{
+        width: 100%;
+    }
+    #end{
+        height: 30vh;
+        margin-top: 100px;
+    }
+    .sc{
+        margin-top: 10px;
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-48%);
+        margin-left: 10px;
+    }
+    .socialmedia-box{
+        height: 130px;
+    }
+}
+
+/* Height */
+@media (min-height: 1281px) and (max-height: 1600px) {
+    #body{
+        height: 50vh;
+    }
+    .wel{
+        margin-top: 300px;
+    }
+    #end{
+        margin-top: -110px;
+        height: 10vh;
+    }
+    .socialmedia-box{
+        height: 190px;
+    }
+}
+@media (min-height: 953px) and (max-height: 1280px) {
+    #body{
+        height: 50vh;
+    }
+    #end{
+        margin-top: 50px;
+        height: 10vh;
+    }
+}
+@media (min-height: 901px) and (max-height: 952px) {
+    #body{
+        height: 70vh;
+    }
+    #end{
+        margin-top: -60px;
+        height: 20vh;
+    }
+}
+@media (min-height: 850px) and (max-height: 900px) {
+    #body{
+        height: 70vh;
+    }
+    #end{
+        margin-top: -60px;
+        height: 20vh;
+    }
+}
+@media (min-height: 741px) and (max-height: 849px) {
+    #body{
+        height: 70vh;
+    }
+    #end{
+        margin-top: 30px;
+        height: 20vh;
+    }
+}
+
+
+/*@media (min-height: 1024px) and (min-width: 1100px) {
+    .desc{
+        font-size: 25px;
+    }
+    .samp{
+        height: 150px;
+    }
+    .logo{
+        height: 300px;
+    }
+    #end{
+        margin-top: -200px;
+    }
+}*/
+@media (min-width: 800px) and (max-width: 1000px) and (min-height: 740px) and (max-height: 100px) {
+    #body{
+        height: 70vh;
+    }
+    .logo{
+        height: 350px;
+        margin-top: -100px;
+        margin-left: 100px;
+    }
+    #end{
+        margin-top: 30px;
+        height: 20vh;
+    }
+}
